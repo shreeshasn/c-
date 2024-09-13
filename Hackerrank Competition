@@ -1,0 +1,27 @@
+Multiples Of 3 and 5:
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int t; 
+    scanf("%d",&t);
+    for(int a0 = 0; a0 < t; a0++){
+        int n; 
+        scanf("%d",&n);
+        int sum=0;
+        for(int j=0;j<n;j++){
+            if(j%3==0 || j%5==0){
+                sum=sum+j;
+            }
+        }
+        printf("%d \n",sum);
+    }
+    return 0;
+}
+
